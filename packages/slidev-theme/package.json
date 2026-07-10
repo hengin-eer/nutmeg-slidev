@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "slidev catalog/slides.md",
     "build": "slidev build catalog/slides.md && slidev build catalog/contrast.md --out dist/contrast && slidev build catalog/brand-gradient.md --out dist/brand-gradient",
+    "build:pages": "slidev build catalog/slides.md --base /nutmeg-slidev/ && slidev build catalog/contrast.md --out dist/contrast --base /nutmeg-slidev/contrast/ && slidev build catalog/brand-gradient.md --out dist/brand-gradient --base /nutmeg-slidev/brand-gradient/",
     "export": "slidev export catalog/slides.md",
     "check:package": "npm pack --dry-run"
   },
