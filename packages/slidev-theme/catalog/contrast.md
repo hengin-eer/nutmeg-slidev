@@ -8,7 +8,7 @@ themeConfig:
     logo: cover-only
 ---
 
-<NutmegCover category="NUTMEG Slide Design System" title="コントラスト重視版" updated="v0.1.0" />
+<NutmegCover category="NUTMEG Slide Design System" title="コントラスト重視版" updated="v0.2.0" />
 
 ---
 

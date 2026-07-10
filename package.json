@@ -1,13 +1,15 @@
 {
   "name": "nutmeg-slidev",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "NUTMEG Slidev theme, component catalog, and deck generator",
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
     "build": "npm run build --workspace=@timdaik/slidev-theme-nutmeg",
+    "build:pages": "npm run build:pages --workspace=@timdaik/slidev-theme-nutmeg",
+    "catalog:serve": "npm run catalog:serve --workspace=@timdaik/slidev-theme-nutmeg",
     "check:package": "npm run check:package --workspace=@timdaik/slidev-theme-nutmeg",
     "check:create": "node packages/create-nutmeg-slides/bin/create.mjs --skip-install /tmp/nutmeg-slidev-create-check"
   },
