@@ -1,0 +1,17 @@
+{
+  "name": "nutmeg-slides-template",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "slidev slides.md",
+    "build": "slidev build slides.md",
+    "export": "slidev export slides.md"
+  },
+  "devDependencies": {
+    "@slidev/cli": "52.16.0",
+    "@timdaik/slidev-theme-nutmeg": "0.1.0"
+  },
+  "engines": {
+    "node": ">=22.14.0"
+  }
+}

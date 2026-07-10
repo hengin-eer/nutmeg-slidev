@@ -1,0 +1,103 @@
+:root {
+  --nutmeg-white: #ffffff;
+  --nutmeg-black: #0c0303;
+  --nutmeg-gray-900: #24201f;
+  --nutmeg-gray-600: #6c6461;
+  --nutmeg-gray-200: #e7e1de;
+  --nutmeg-yellow-light: #ffcb00;
+  --nutmeg-orange: #f0932e;
+  --nutmeg-orange-deep: #ff592b;
+  --nutmeg-page-padding-x: 5rem;
+  --nutmeg-page-padding-y: 3.75rem;
+  --nutmeg-page-background: var(--nutmeg-white);
+  --nutmeg-ink: var(--nutmeg-gray-900);
+  --nutmeg-body: var(--nutmeg-gray-600);
+  --nutmeg-card-background: var(--nutmeg-white);
+  --nutmeg-card-border: var(--nutmeg-gray-200);
+  --nutmeg-card-highlight-background: #fff8d6;
+  --nutmeg-card-action-background: #fff0eb;
+  --nutmeg-footer-background: transparent;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 400;
+  src: url("@fontsource/noto-sans-jp/files/noto-sans-jp-japanese-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 700;
+  src: url("@fontsource/noto-sans-jp/files/noto-sans-jp-japanese-700-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 400;
+  src: url("@fontsource/noto-sans-jp/files/noto-sans-jp-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 700;
+  src: url("@fontsource/noto-sans-jp/files/noto-sans-jp-latin-700-normal.woff2") format("woff2");
+}
+
+.slidev-layout {
+  background: var(--nutmeg-page-background);
+  color: var(--nutmeg-ink);
+  font-family: "Noto Sans JP", sans-serif;
+  padding: var(--nutmeg-page-padding-y) var(--nutmeg-page-padding-x);
+}
+
+.nutmeg-layout { height: 100%; }
+
+html[data-nutmeg-variant="contrast"] {
+  --nutmeg-ink: var(--nutmeg-black);
+  --nutmeg-body: #4b4542;
+  --nutmeg-card-border: #bdb5b1;
+}
+
+html[data-nutmeg-variant="brand-gradient"] {
+  --nutmeg-page-background: radial-gradient(circle at 16% 12%, #ffcb00 0%, #ffcb00 30%, #f0932e 60%, #ff592b 90%);
+  --nutmeg-ink: var(--nutmeg-black);
+  --nutmeg-body: #352b27;
+  --nutmeg-card-background: rgb(255 255 255 / 88%);
+  --nutmeg-card-border: rgb(12 3 3 / 18%);
+  --nutmeg-card-highlight-background: rgb(255 248 214 / 94%);
+  --nutmeg-card-action-background: rgb(255 240 235 / 94%);
+}
+
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3,
+.slidev-layout p { margin-top: 0; }
+
+.nutmeg-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.nutmeg-grid--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.nutmeg-grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.nutmeg-reference-list {
+  border-left: 3px solid var(--nutmeg-orange);
+  display: grid;
+  gap: 0.7rem;
+  margin-top: 2.4rem;
+  padding-left: 1.35rem;
+}
+
+.nutmeg-reference-list code {
+  color: var(--nutmeg-gray-600);
+  font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
+  font-size: 0.9rem;
+}

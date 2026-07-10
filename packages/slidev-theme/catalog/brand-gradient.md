@@ -1,0 +1,20 @@
+---
+theme: ../
+title: NUTMEG Slide Design System — Brand Gradient
+aspectRatio: 16/9
+themeConfig:
+  nutmeg:
+    variant: brand-gradient
+    logo: footer
+---
+
+<NutmegCover category="NUTMEG Slide Design System" title="ロゴ背景版" updated="v0.1.0" />
+
+---
+
+<NutmegTitle eyebrow="VARIANT　/　BRAND GRADIENT" title="ロゴ由来の背景は、節目をつくる場面で使う" lead="黄30%・橙60%・濃橙90%のradial gradient上に、半透明の白面を置く。" />
+
+<div class="nutmeg-grid nutmeg-grid--2">
+  <NutmegCard label="向く場面" title="表紙・章扉・次の行動">背景色を情報の強弱ではなく、資料の区切りに使う。</NutmegCard>
+  <NutmegCard label="避ける場面" title="細かな比較・長文" tone="action">情報密度が高いページではsoftまたはcontrastへ戻す。</NutmegCard>
+</div>

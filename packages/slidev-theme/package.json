@@ -1,0 +1,51 @@
+{
+  "name": "@timdaik/slidev-theme-nutmeg",
+  "private": false,
+  "version": "0.1.0",
+  "description": "NUTMEG Slidev theme",
+  "license": "MIT",
+  "scripts": {
+    "dev": "slidev catalog/slides.md",
+    "build": "slidev build catalog/slides.md && slidev build catalog/contrast.md --out dist/contrast && slidev build catalog/brand-gradient.md --out dist/brand-gradient",
+    "export": "slidev export catalog/slides.md",
+    "check:package": "npm pack --dry-run"
+  },
+  "keywords": [
+    "slidev-theme",
+    "slidev",
+    "nutmeg",
+    "nutfes"
+  ],
+  "files": [
+    "assets",
+    "components",
+    "layouts",
+    "styles",
+    "global-top.vue",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.14.0",
+    "slidev": ">=52.16.0 <53"
+  },
+  "slidev": {
+    "colorSchema": "light",
+    "defaults": {
+      "aspectRatio": "16/9",
+      "fonts": {
+        "provider": "none",
+        "sans": "Noto Sans JP"
+      }
+    }
+  },
+  "dependencies": {
+    "@fontsource/noto-sans-jp": "^5.2.6"
+  },
+  "peerDependencies": {
+    "@slidev/cli": "^52.16.0"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^52.16.0"
+  }
+}
