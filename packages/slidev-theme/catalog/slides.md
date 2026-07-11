@@ -5,10 +5,10 @@ aspectRatio: 16/9
 themeConfig:
   nutmeg:
     variant: soft
-    logo: footer
+    logo: every-slide
 ---
 
-<NutmegCover category="NUTMEG Slide Design System" title="伝える内容を、迷わず整える" updated="v0.1.0" />
+<NutmegCover category="NUTMEG Slide Design System" title="伝える内容を、迷わず整える" updated="v0.2.1" :presenter="{ name: 'NUTMEG Design Team', url: 'https://github.com/hiro-to/nutmeg-slidev' }" />
 
 ---
 
@@ -55,7 +55,7 @@ themeConfig:
 <NutmegTitle eyebrow="LOGO" title="ロゴ表示は、資料の目的に合わせて選べる" />
 
 <div class="nutmeg-grid nutmeg-grid--3">
-  <NutmegCard label="footer" title="本文の識別">右下に黒ロゴを置く標準設定。</NutmegCard>
+  <NutmegCard label="every-slide" title="本文の識別">非表紙の右上に黒ロゴを置く標準設定。</NutmegCard>
   <NutmegCard label="cover-only" title="表紙だけに置く">本文へロゴを置かず、内容へ集中させる。</NutmegCard>
   <NutmegCard label="none" title="ロゴを出さない">共同資料など、別の識別ルールがある場合に選ぶ。</NutmegCard>
 </div>

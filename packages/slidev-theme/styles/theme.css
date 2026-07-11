@@ -17,6 +17,7 @@
   --nutmeg-card-highlight-background: #fff8d6;
   --nutmeg-card-action-background: #fff0eb;
   --nutmeg-footer-background: transparent;
+  --nutmeg-header-safe-area: 7.5rem;
 }
 
 @font-face {

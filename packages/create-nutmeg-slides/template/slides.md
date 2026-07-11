@@ -5,7 +5,7 @@ aspectRatio: 16/9
 themeConfig:
   nutmeg:
     variant: soft
-    logo: footer
+    logo: every-slide
 ---
 
 <NutmegCover category="NUTMEG" title="伝えたいことを、ひとつ書く" updated="2026-07-10" />
