@@ -1,0 +1,67 @@
+{
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "include-component-in-tag": false,
+  "include-v-in-tag": true,
+  "draft": true,
+  "force-tag-creation": true,
+  "changelog-sections": [
+    { "type": "feat", "section": "追加", "hidden": false },
+    { "type": "fix", "section": "修正", "hidden": false },
+    { "type": "perf", "section": "性能改善", "hidden": false },
+    { "type": "deps", "section": "依存関係", "hidden": false },
+    { "type": "docs", "section": "ドキュメント", "hidden": false },
+    { "type": "chore", "section": "運用", "hidden": false }
+  ],
+  "packages": {
+    ".": {
+      "release-type": "node",
+      "package-name": "nutmeg-slidev",
+      "extra-files": [
+        {
+          "type": "json",
+          "path": "packages/slidev-theme/package.json",
+          "jsonpath": "$.version"
+        },
+        {
+          "type": "json",
+          "path": "packages/create-nutmeg-slides/package.json",
+          "jsonpath": "$.version"
+        },
+        {
+          "type": "json",
+          "path": "packages/create-nutmeg-slides/template/package.json",
+          "jsonpath": "$.version"
+        },
+        {
+          "type": "json",
+          "path": "packages/create-nutmeg-slides/template/package.json",
+          "jsonpath": "$.devDependencies['@timdaik/slidev-theme-nutmeg']"
+        },
+        {
+          "type": "json",
+          "path": "package-lock.json",
+          "jsonpath": "$.version"
+        },
+        {
+          "type": "json",
+          "path": "package-lock.json",
+          "jsonpath": "$.packages[''].version"
+        },
+        {
+          "type": "json",
+          "path": "package-lock.json",
+          "jsonpath": "$.packages['packages/slidev-theme'].version"
+        },
+        {
+          "type": "json",
+          "path": "package-lock.json",
+          "jsonpath": "$.packages['packages/create-nutmeg-slides'].version"
+        },
+        "packages/slidev-theme/catalog/slides.md",
+        "packages/slidev-theme/catalog/contrast.md",
+        "packages/slidev-theme/catalog/brand-gradient.md",
+        "packages/create-nutmeg-slides/README.md"
+      ]
+    }
+  }
+}

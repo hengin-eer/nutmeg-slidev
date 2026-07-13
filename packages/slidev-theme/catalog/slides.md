@@ -8,7 +8,7 @@ themeConfig:
     logo: every-slide
 ---
 
-<NutmegCover category="NUTMEG Slide Design System" title="伝える内容を、迷わず整える" updated="v0.2.1" :presenter="{ name: 'NUTMEG Design Team', url: 'https://github.com/hiro-to/nutmeg-slidev' }" />
+<NutmegCover category="NUTMEG Slide Design System" title="伝える内容を、迷わず整える" updated="v0.2.1" :presenter="{ name: 'NUTMEG Design Team', url: 'https://github.com/hiro-to/nutmeg-slidev' }" /> <!-- x-release-please-version -->
 
 ---
 
