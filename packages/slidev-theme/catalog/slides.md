@@ -107,7 +107,7 @@ themeConfig:
 
 <NutmegTitle eyebrow="PROJECT　/　OVERVIEW" title="まず、何のプロジェクトかを一目で伝える" lead="ミッションや機能を詰め込まず、名前・対象・一文の説明に絞る。" />
 
-<NutmegProjectOverview name="Campus Bridge" summary="学園祭の参加団体と実行委員会をつなぐ運営アプリ" :audience="['参加団体', '実行委員会']" image="/project-screen.svg" imageAlt="Campus Bridgeの架空の画面モック" />
+<NutmegProjectOverview name="Campus Bridge" summary="学園祭の参加団体と実行委員会をつなぐ運営アプリ" :audience="['参加団体', '実行委員会']" image="./project-screen.svg" imageAlt="Campus Bridgeの架空の画面モック" />
 
 ---
 
@@ -141,7 +141,7 @@ themeConfig:
 
 <NutmegTitle eyebrow="PROJECT　/　SCREEN" title="アプリ画面を見せながら、支援内容を具体化する" />
 
-<NutmegFeatureShowcase title="準備状況を一つの画面で確認する" description="利用者が今見るべき情報と、次に取る行動を同じ画面へまとめる。" image="/project-screen.svg" imageAlt="Campus Bridgeの架空画面モック" :points="['提出状況を確認できる', '担当者ごとの作業を分けられる', '次の締切を見失わない']" />
+<NutmegFeatureShowcase title="準備状況を一つの画面で確認する" description="利用者が今見るべき情報と、次に取る行動を同じ画面へまとめる。" image="./project-screen.svg" imageAlt="Campus Bridgeの架空画面モック" :points="['提出状況を確認できる', '担当者ごとの作業を分けられる', '次の締切を見失わない']" />
 
 ---
 
@@ -153,6 +153,20 @@ themeConfig:
   { period: '8月', title: '試行', detail: '実際の流れを確かめる' },
   { period: '9–10月', title: '本番', detail: '運用を支える' },
   { period: '11–3月', title: '振り返り', detail: '学びを次へ残す' }
+]" />
+
+---
+
+<NutmegTitle eyebrow="PROJECT　/　SCHEDULE" title="一週間の動きを、参加後の景色まで想像できる粒度で示す" lead="週単位の予定は、関わり方と次の一歩を具体的に伝える。" />
+
+<NutmegSchedule scale="week" :items="[
+  { period: '月', title: '状況を確認', detail: '利用者の声を読む' },
+  { period: '火', title: '論点を整理', detail: '課題を小さく分ける' },
+  { period: '水', title: '画面を試す', detail: 'チームでレビューする' },
+  { period: '木', title: '実装を進める', detail: '担当の作業を進める' },
+  { period: '金', title: '共有する', detail: '進捗と困りごとを伝える' },
+  { period: '土', title: '振り返る', detail: '使われ方を確かめる' },
+  { period: '日', title: '次を決める', detail: '次週の一歩を置く' }
 ]" />
 
 ---
@@ -197,4 +211,4 @@ themeConfig:
 
 <NutmegTitle eyebrow="PROJECT　/　RECRUIT" title="新入生へのメッセージは、参加後の景色まで見せる" />
 
-<NutmegRecruitMessage copy="つくるだけじゃない。使われるところまで、一緒に見る。" message="利用者の声を聞き、考え、画面にし、実際の運用からまた学ぶ。Campus Bridgeは、技術と人の間を行き来しながらつくるプロジェクトです。" action="まずはプロジェクトを見に来てください" speaker="SAMPLE / 架空プロジェクトのメッセージ" image="/project-team.svg" imageAlt="Campus Bridgeの架空チームイメージ" />
+<NutmegRecruitMessage copy="つくるだけじゃない。使われるところまで、一緒に見る。" message="利用者の声を聞き、考え、画面にし、実際の運用からまた学ぶ。Campus Bridgeは、技術と人の間を行き来しながらつくるプロジェクトです。" action="まずはプロジェクトを見に来てください" speaker="SAMPLE / 架空プロジェクトのメッセージ" image="./project-team.svg" imageAlt="Campus Bridgeの架空チームイメージ" />

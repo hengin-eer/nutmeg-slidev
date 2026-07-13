@@ -4,7 +4,7 @@ import { useSlideContext } from '@slidev/client'
 
 const { $slidev } = useSlideContext()
 const variant = computed(() => {
-  const value = ($slidev.themeConfigs.value?.nutmeg as { variant?: string } | undefined)?.variant
+  const value = ($slidev.configs.themeConfig?.nutmeg as { variant?: string } | undefined)?.variant
   return value === 'contrast' || value === 'brand-gradient' ? value : 'soft'
 })
 </script>

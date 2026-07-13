@@ -45,7 +45,7 @@ themeConfig:
   name="Campus Bridge"
   summary="学園祭の参加団体と実行委員会をつなぐ運営アプリ"
   :audience="['参加団体', '実行委員会']"
-  image="/project-screen.svg"
+  image="./project-screen.svg"
   image-alt="プロジェクト画面"
 />` },
   { category: 'Project', title: 'NutmegProjectMission', description: '対象者、現在の課題、目指す状態からミッションを組み立てる。', keywords: ['project', 'mission', 'ミッション', '課題'], deck: 'slides/', slide: 11, code: String.raw`<NutmegProjectMission
@@ -68,7 +68,7 @@ themeConfig:
   { category: 'Project', title: 'NutmegFeatureShowcase', description: 'アプリ画面と説明を並べ、実際の利用場面をアピールする。', keywords: ['project', 'screen', '画面', 'showcase'], deck: 'slides/', slide: 14, code: String.raw`<NutmegFeatureShowcase
   title="準備状況を一つの画面で確認する"
   description="見るべき情報と次の行動をまとめる。"
-  image="/project-screen.svg"
+  image="./project-screen.svg"
   image-alt="アプリ画面"
   :points="['提出状況', '担当作業', '次の締切']"
 />` },
@@ -78,7 +78,13 @@ themeConfig:
   { period: '8月', title: '試行' },
   { period: '9–10月', title: '本番' }
 ]" />` },
-  { category: 'Project', title: 'NutmegComparison', description: '他プロジェクトとの違いを、同じ比較軸で整理する。', keywords: ['project', 'comparison', '比較', '違い'], deck: 'slides/', slide: 16, code: String.raw`<NutmegComparison
+  { category: 'Project', title: 'NutmegSchedule / week', description: '一週間の動きと、参加後の次の一歩を見える化する。', keywords: ['project', 'schedule', '週間', 'week', '予定'], deck: 'slides/', slide: 16, code: String.raw`<NutmegSchedule scale="week" :items="[
+  { period: '月', title: '状況を確認' },
+  { period: '水', title: '画面を試す' },
+  { period: '金', title: '共有する' },
+  { period: '日', title: '次を決める' }
+]" />` },
+  { category: 'Project', title: 'NutmegComparison', description: '他プロジェクトとの違いを、同じ比較軸で整理する。', keywords: ['project', 'comparison', '比較', '違い'], deck: 'slides/', slide: 17, code: String.raw`<NutmegComparison
   highlight-id="campus"
   :subjects="[
     { id: 'campus', name: 'Campus Bridge' },
@@ -86,25 +92,25 @@ themeConfig:
   ]"
   :rows="rows"
 />` },
-  { category: 'Project', title: 'NutmegProjectFacts', description: '規模や特徴を短い事実として見せる。', keywords: ['project', 'facts', '数字', '規模'], deck: 'slides/', slide: 17, code: String.raw`<NutmegProjectFacts :items="[
+  { category: 'Project', title: 'NutmegProjectFacts', description: '規模や特徴を短い事実として見せる。', keywords: ['project', 'facts', '数字', '規模'], deck: 'slides/', slide: 18, code: String.raw`<NutmegProjectFacts :items="[
   { value: '4', label: '支援領域' },
   { value: '2', label: '主な利用者' }
 ]" />` },
-  { category: 'Project', title: 'NutmegQuote', description: '利用者やメンバーの声で、紹介に実感を加える。', keywords: ['project', 'quote', '声', 'インタビュー'], deck: 'slides/', slide: 18, code: String.raw`<NutmegQuote
+  { category: 'Project', title: 'NutmegQuote', description: '利用者やメンバーの声で、紹介に実感を加える。', keywords: ['project', 'quote', '声', 'インタビュー'], deck: 'slides/', slide: 19, code: String.raw`<NutmegQuote
   quote="次に何をすればいいかが分かる。"
   source="プロジェクトの利用者"
   role="SAMPLE"
 />` },
-  { category: 'Project', title: 'NutmegOnboarding', description: '新入生が参加してからの最初の一歩を示す。', keywords: ['project', 'onboarding', '新入生', '参加'], deck: 'slides/', slide: 19, code: String.raw`<NutmegOnboarding :steps="[
+  { category: 'Project', title: 'NutmegOnboarding', description: '新入生が参加してからの最初の一歩を示す。', keywords: ['project', 'onboarding', '新入生', '参加'], deck: 'slides/', slide: 20, code: String.raw`<NutmegOnboarding :steps="[
   { timing: '1週目', title: '見てみる', detail: '画面を知る' },
   { timing: '2週目', title: '聞いてみる', detail: '課題を整理する' },
   { timing: '1か月後', title: '届けてみる', detail: '結果を振り返る' }
 ]" />` },
-  { category: 'Project', title: 'NutmegRecruitMessage', description: '新入生へ、参加後に得られる経験まで含めて伝える。', keywords: ['project', 'recruit', '勧誘', '新入生', 'message'], deck: 'slides/', slide: 20, code: String.raw`<NutmegRecruitMessage
+  { category: 'Project', title: 'NutmegRecruitMessage', description: '新入生へ、参加後に得られる経験まで含めて伝える。', keywords: ['project', 'recruit', '勧誘', '新入生', 'message'], deck: 'slides/', slide: 21, code: String.raw`<NutmegRecruitMessage
   copy="つくるだけじゃない。使われるところまで、一緒に見る。"
   message="利用者の声を聞き、考え、画面にする。"
   action="まずは見に来てください"
-  image="/project-team.svg"
+  image="./project-team.svg"
   image-alt="チームイメージ"
 />` },
 ]
