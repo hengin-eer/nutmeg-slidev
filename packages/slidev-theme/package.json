@@ -4,6 +4,11 @@
   "version": "0.2.1",
   "description": "NUTMEG Slidev theme",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hengin-eer/nutmeg-slidev.git",
+    "directory": "packages/slidev-theme"
+  },
   "scripts": {
     "dev": "slidev catalog/slides.md",
     "build": "node scripts/build-catalog.mjs",
