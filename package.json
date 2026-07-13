@@ -1,7 +1,7 @@
 {
   "name": "nutmeg-slidev",
   "private": true,
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "NUTMEG Slidev theme, component catalog, and deck generator",
   "workspaces": [
     "packages/*"
