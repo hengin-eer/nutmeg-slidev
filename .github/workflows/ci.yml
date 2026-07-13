@@ -22,3 +22,22 @@ jobs:
       - run: npm run build
       - run: npm run check:package
       - run: npm run check:create
+
+  pr-title:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read
+    steps:
+      - name: PRタイトルをConventional Commits形式で検証
+        env:
+          PR_TITLE: ${{ github.event.pull_request.title }}
+        run: |
+          set -euo pipefail
+          pattern='^(feat|fix|perf|deps|docs|chore|refactor|test|build|ci|revert)(\([[:alnum:]_.\/-]+\))?!?: .+'
+          if [[ ! "$PR_TITLE" =~ $pattern ]]; then
+            echo "::error::PRタイトルは '<type>: <summary>' 形式にしてください。例: feat: カタログを更新"
+            echo "現在のタイトル: $PR_TITLE"
+            exit 1
+          fi
