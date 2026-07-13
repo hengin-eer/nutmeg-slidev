@@ -28,7 +28,7 @@ npm stage --help
 4. npmの各パッケージ設定でTrusted Publisherを追加する。GitHubリポジトリ`hengin-eer/nutmeg-slidev`、`release.yml`、環境`npm-release`、許可操作`npm stage publish`を指定する。
 5. Publishing accessで「2FA必須・トークン禁止」を有効化する。
 
-以後のリリースはRelease Pleaseが作成したタグからGitHub Actionsで`npm stage publish`まで実行し、npmの画面で2FAを使って内容を承認する。Actionsには長期のnpmトークンを保存しない。
+以後のリリースはRelease Pleaseが作成したタグを`repository_dispatch`で`release.yml`へ渡し、GitHub Actionsで`npm stage publish`まで実行する。npmの画面で2FAを使って内容を承認する。Actionsには長期のnpmトークンを保存しない。
 
 ## リリースフロー
 
@@ -48,6 +48,8 @@ Release Pleaseには、個人アカウント`hengin-eer`で発行した専用の
 有効期限は1年とし、期限の1か月前までに新しいPATへ更新する。ワークフローはこのSecretを必須とし、`GITHUB_TOKEN`へフォールバックしない。これにより、Release Pleaseが作成したPRでも必須CIを自動実行できる。リポジトリ設定の「Allow GitHub Actions to create and approve pull requests」は有効化しない。
 
 未公開の`v0.2.1`タグは失敗履歴として残し、移動・削除・再公開しない。Release Pleaseが次に算出する`v0.3.0`を、修正後最初のnpm公開版とする。
+
+npm Trusted PublisherのWorkflow filenameは`release.yml`とする。`workflow_call`では呼び出し元のworkflow名が照合されるため使用せず、Release Pleaseから`repository_dispatch`で独立した公開workflowを起動する。再実行するときは「Stage npm release」を手動実行し、対象タグと失敗したパッケージを指定する。
 
 ## NUTFES移管
 
