@@ -13,7 +13,7 @@ themeConfig:
 
 ---
 
-<NutmegTitle eyebrow="VARIANT　/　BRAND GRADIENT" title="ロゴ由来の背景は、節目をつくる場面で使う" lead="黄30%・橙60%・濃橙90%のradial gradient上に、半透明の白面を置く。" />
+<NutmegTitle eyebrow="VARIANT　/　BRAND GRADIENT" title="ロゴ由来の背景は、節目をつくる場面で使う" lead="黄30%・橙60%・濃橙90%のradial gradientに、半透明の白いガラス面を重ねる。" />
 
 <div class="nutmeg-grid nutmeg-grid--2">
   <NutmegCard label="向く場面" title="表紙・章扉・次の行動">背景色を情報の強弱ではなく、資料の区切りに使う。</NutmegCard>

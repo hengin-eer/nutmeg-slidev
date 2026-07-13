@@ -9,9 +9,12 @@ defineProps<{ steps: Step[] }>()
 </template>
 
 <style scoped>
-.nutmeg-onboarding { display: grid; gap: 0; grid-template-columns: repeat(var(--step-count), minmax(0, 1fr)); list-style: none; margin: 0; padding: 0; }
-li { border-left: 1px solid var(--nutmeg-card-border); min-height: 9rem; padding: 0 1rem; }
-li:first-child { border-left: 0; padding-left: 0; }
+.nutmeg-onboarding { display: grid; gap: 0; grid-template-columns: repeat(var(--step-count), minmax(0, 1fr)); list-style: none; margin: 0; padding: 1.7rem 0 0; position: relative; }
+.nutmeg-onboarding::before { background: var(--nutmeg-card-border); content: ''; height: 1px; left: 0; position: absolute; right: 0; top: .45rem; }
+li { min-height: 0; padding: 0 1rem; position: relative; }
+li::before { background: var(--nutmeg-orange); border: .25rem solid var(--nutmeg-white); border-radius: 50%; content: ''; height: .65rem; left: 1rem; position: absolute; top: -1.6rem; width: .65rem; }
+li:first-child { padding-left: 0; }
+li:first-child::before { left: 0; }
 span { color: var(--nutmeg-orange-deep); font-size: .78rem; font-weight: 700; letter-spacing: .08em; }
 small { color: var(--nutmeg-body); font-size: .68rem; }
 h2 { color: var(--nutmeg-ink); font-size: 1rem; margin: .65rem 0 .4rem; }

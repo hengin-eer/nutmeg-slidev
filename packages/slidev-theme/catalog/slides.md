@@ -109,23 +109,23 @@ layout: nutmeg-project-overview
 
 <NutmegTitle eyebrow="PROJECT　/　OVERVIEW" title="まず、何のプロジェクトかを一目で伝える" lead="ミッションや機能を詰め込まず、名前・対象・一文の説明に絞る。" />
 
-<NutmegProjectOverview name="Campus Bridge" summary="学園祭の参加団体と実行委員会をつなぐ運営アプリ" :audience="['参加団体', '実行委員会']" image="./project-screen.svg" imageAlt="Campus Bridgeの架空の画面モック" />
+<NutmegProjectOverview name="[プロジェクト名]" summary="[誰の、どの業務を、どう支えるかを一文で記載]" :audience="['[主な利用者]', '[連携する相手]']" image="./project-screen.svg" imageAlt="[画面の説明]" />
 
 ---
 
 <NutmegTitle eyebrow="PROJECT　/　MISSION" title="ミッションは、なぜ存在するかを一枚で整理する" />
 
-<NutmegProjectMission statement="準備に必要な情報と次の行動が、迷わず見つかる状態をつくる" target="参加団体と実行委員会" challenge="連絡、名簿、物品の情報が複数の場所に分散している" future="一つの場所で確認し、安心して準備を進められる" />
+<NutmegProjectMission statement="[プロジェクトが実現したい状態]" target="[支援する相手]" challenge="[現在起きている課題]" future="[導入後に実現したい状態]" />
 
 ---
 
 <NutmegTitle eyebrow="PROJECT　/　SUPPORT" title="ミッションを、利用者への支援内容へ分解する" />
 
 <NutmegProjectSupport :items="[
-  { icon: '↔', title: '連絡', detail: '参加団体と実行委員会が必要な情報を共有する。' },
-  { icon: '▣', title: '名簿', detail: '参加者情報をまとめ、提出状況を確認する。' },
-  { icon: '□', title: '物品', detail: '必要な物品と受け渡しを管理する。' },
-  { icon: '⌂', title: '会場', detail: '会場に関する準備状況を一つに集める。' }
+  { title: '[支援内容 01]', detail: '[具体的に支える業務]' },
+  { title: '[支援内容 02]', detail: '[具体的に支える業務]' },
+  { title: '[支援内容 03]', detail: '[具体的に支える業務]' },
+  { title: '[支援内容 04]', detail: '[具体的に支える業務]' }
 ]" />
 
 ---
@@ -133,10 +133,10 @@ layout: nutmeg-project-overview
 <NutmegTitle eyebrow="PROJECT　/　WORK" title="プロジェクトの仕事内容を、役割ではなく行動で示す" />
 
 <NutmegWorkGrid :items="[
-  { title: '要件を整理する', detail: '利用者の業務と困りごとを聞き、画面へ落とし込む。', tags: ['Hearing', 'Planning'] },
-  { title: '画面をつくる', detail: '使う人が迷わない情報構造と操作を設計する。', tags: ['Design', 'Front'] },
-  { title: '仕組みを支える', detail: 'データと権限を安全に扱えるよう実装する。', tags: ['Back', 'Infra'] },
-  { title: '運用を確かめる', detail: '本番の準備と利用後の改善を続ける。', tags: ['Operation'] }
+  { title: '[仕事内容 01]', detail: '[誰と、何を整理する仕事か]', tags: ['[担当領域]'] },
+  { title: '[仕事内容 02]', detail: '[どんな成果物をつくる仕事か]', tags: ['[担当領域]'] },
+  { title: '[仕事内容 03]', detail: '[どう改善や運用を支える仕事か]', tags: ['[担当領域]'] },
+  { title: '[仕事内容 04]', detail: '[チームでどんな役割を担うか]', tags: ['[担当領域]'] }
 ]" />
 
 ---
@@ -145,18 +145,18 @@ layout: nutmeg-project-showcase
 
 <NutmegTitle eyebrow="PROJECT　/　SCREEN" title="アプリ画面を見せながら、支援内容を具体化する" />
 
-<NutmegFeatureShowcase title="準備状況を一つの画面で確認する" description="利用者が今見るべき情報と、次に取る行動を同じ画面へまとめる。" image="./project-screen.svg" imageAlt="Campus Bridgeの架空画面モック" :points="['提出状況を確認できる', '担当者ごとの作業を分けられる', '次の締切を見失わない']" />
+<NutmegFeatureShowcase title="[画面で実現できること]" description="[利用者がこの画面を使う場面と得られる価値]" image="./project-screen.svg" imageAlt="[画面の説明]" :points="['[確認できる情報]', '[実行できる操作]', '[迷わなくなる点]']" />
 
 ---
 
 <NutmegTitle eyebrow="PROJECT　/　SCHEDULE" title="一年間と一週間を、別のスケールで見せる" />
 
 <NutmegSchedule scale="year" :items="[
-  { period: '4–5月', title: '企画と募集', detail: '参加団体の状況を知る' },
-  { period: '6–7月', title: '準備', detail: '情報と機能を整える' },
-  { period: '8月', title: '試行', detail: '実際の流れを確かめる' },
-  { period: '9–10月', title: '本番', detail: '運用を支える' },
-  { period: '11–3月', title: '振り返り', detail: '学びを次へ残す' }
+  { period: '[期間 01]', title: '[フェーズ名]', detail: '[この期間の目的]' },
+  { period: '[期間 02]', title: '[フェーズ名]', detail: '[この期間の目的]' },
+  { period: '[期間 03]', title: '[フェーズ名]', detail: '[この期間の目的]' },
+  { period: '[期間 04]', title: '[フェーズ名]', detail: '[この期間の目的]' },
+  { period: '[期間 05]', title: '[フェーズ名]', detail: '[この期間の目的]' }
 ]" />
 
 ---
@@ -164,23 +164,23 @@ layout: nutmeg-project-showcase
 <NutmegTitle eyebrow="PROJECT　/　SCHEDULE" title="一週間の動きを、参加後の景色まで想像できる粒度で示す" lead="週単位の予定は、関わり方と次の一歩を具体的に伝える。" />
 
 <NutmegSchedule scale="week" :items="[
-  { period: '月', title: '状況を確認', detail: '利用者の声を読む' },
-  { period: '火', title: '論点を整理', detail: '課題を小さく分ける' },
-  { period: '水', title: '画面を試す', detail: 'チームでレビューする' },
-  { period: '木', title: '実装を進める', detail: '担当の作業を進める' },
-  { period: '金', title: '共有する', detail: '進捗と困りごとを伝える' },
-  { period: '土', title: '振り返る', detail: '使われ方を確かめる' },
-  { period: '日', title: '次を決める', detail: '次週の一歩を置く' }
+  { period: '[曜日]', title: '[予定]', detail: '[関わり方や次の一歩]' },
+  { period: '[曜日]', title: '[予定]', detail: '[関わり方や次の一歩]' },
+  { period: '[曜日]', title: '[予定]', detail: '[関わり方や次の一歩]' },
+  { period: '[曜日]', title: '[予定]', detail: '[関わり方や次の一歩]' },
+  { period: '[曜日]', title: '[予定]', detail: '[関わり方や次の一歩]' },
+  { period: '[曜日]', title: '[予定]', detail: '[関わり方や次の一歩]' },
+  { period: '[曜日]', title: '[予定]', detail: '[関わり方や次の一歩]' }
 ]" />
 
 ---
 
 <NutmegTitle eyebrow="PROJECT　/　COMPARISON" title="他プロジェクトとの違いを、同じ軸で比べる" />
 
-<NutmegComparison highlight-id="campus" :subjects="[{ id: 'campus', name: 'Campus Bridge' }, { id: 'finance', name: 'Finance App' }, { id: 'infra', name: 'Infra Team' }]" :rows="[
-  { label: '主な相手', values: { campus: '参加団体', finance: '利用者', infra: '開発者' } },
-  { label: '扱うもの', values: { campus: '運営情報', finance: 'お金の情報', infra: '基盤' } },
-  { label: '面白さ', values: { campus: '現場に近い', finance: '業務を変える', infra: '全体を支える' } }
+<NutmegComparison highlight-id="project" :subjects="[{ id: 'project', name: '[このプロジェクト]' }, { id: 'target-a', name: '[比較対象 A]' }, { id: 'target-b', name: '[比較対象 B]' }]" :rows="[
+  { label: '[比較軸 01]', values: { project: '[このプロジェクトの特徴]', 'target-a': '[比較対象 Aの特徴]', 'target-b': '[比較対象 Bの特徴]' } },
+  { label: '[比較軸 02]', values: { project: '[このプロジェクトの特徴]', 'target-a': '[比較対象 Aの特徴]', 'target-b': '[比較対象 Bの特徴]' } },
+  { label: '[比較軸 03]', values: { project: '[このプロジェクトの特徴]', 'target-a': '[比較対象 Aの特徴]', 'target-b': '[比較対象 Bの特徴]' } }
 ]" />
 
 ---
@@ -188,27 +188,31 @@ layout: nutmeg-project-showcase
 <NutmegTitle eyebrow="PROJECT　/　FACTS" title="数字や特徴は、短い事実として置く" />
 
 <NutmegProjectFacts :items="[
-  { value: '4', label: '支援領域', detail: '連絡・名簿・物品・会場' },
-  { value: '2', label: '主な利用者', detail: '参加団体と実行委員会' },
-  { value: '1', label: '目指す場所', detail: '準備情報を集める画面' },
-  { value: '∞', label: '改善の余地', detail: '使われ方から学び続ける' }
+  { value: 'XX', label: '[数値の意味]', detail: '[集計条件や期間]' },
+  { value: 'XX', label: '[数値の意味]', detail: '[集計条件や期間]' },
+  { value: 'XX', label: '[数値の意味]', detail: '[集計条件や期間]' },
+  { value: 'XX', label: '[数値の意味]', detail: '[集計条件や期間]' }
 ]" />
 
 ---
 
 <NutmegTitle eyebrow="PROJECT　/　VOICE" title="利用者やメンバーの声で、紹介文に実感を加える" />
 
-<NutmegQuote quote="次に何をすればいいかが分かると、準備を止めずに進められる。" source="Campus Bridgeの架空ユーザー" role="SAMPLE / 架空のコメント" />
+<NutmegQuote :items="[
+  { quote: 'どこを見ればよいかが整理されていて、次にやることを決めやすくなりました。', source: '[利用者 A]', role: '[所属・立場]' },
+  { quote: '確認のために何度も連絡する回数が減り、自分の作業に集中できました。', source: '[利用者 B]', role: '[所属・立場]' },
+  { quote: '必要な情報が同じ場所にまとまっているので、途中から参加しても状況を追えました。', source: '[利用者 C]', role: '[所属・立場]' },
+  { quote: '使って気づいたことを伝えると、次の改善に反映されるのがうれしいです。', source: '[利用者 D]', role: '[所属・立場]' }
+]" />
 
 ---
 
 <NutmegTitle eyebrow="PROJECT　/　ONBOARDING" title="新入生が参加した後の最初の一歩を示す" />
 
 <NutmegOnboarding :steps="[
-  { timing: '1週目', title: '見てみる', detail: 'プロジェクトの利用者と画面を知る' },
-  { timing: '2週目', title: '聞いてみる', detail: '小さな困りごとを一緒に整理する' },
-  { timing: '3週目', title: 'つくってみる', detail: 'レビューを受けながら実装する' },
-  { timing: '1か月後', title: '届けてみる', detail: '使われた結果を振り返る' }
+  { timing: '[タイミング]', title: '[最初の一歩]', detail: '[触れる情報や画面]' },
+  { timing: '[タイミング]', title: '[次の一歩]', detail: '[チームで試すこと]' },
+  { timing: '[タイミング]', title: '[届ける一歩]', detail: '[振り返る結果]' }
 ]" />
 
 ---
@@ -217,4 +221,4 @@ layout: nutmeg-project-message
 
 <NutmegTitle eyebrow="PROJECT　/　RECRUIT" title="新入生へのメッセージは、参加後の景色まで見せる" />
 
-<NutmegRecruitMessage copy="つくるだけじゃない。使われるところまで、一緒に見る。" message="利用者の声を聞き、考え、画面にし、実際の運用からまた学ぶ。Campus Bridgeは、技術と人の間を行き来しながらつくるプロジェクトです。" action="まずはプロジェクトを見に来てください" speaker="SAMPLE / 架空プロジェクトのメッセージ" image="./project-team.svg" imageAlt="Campus Bridgeの架空チームイメージ" />
+<NutmegRecruitMessage copy="[新入生へ届けたい一番のコピー]" message="[参加すると経験できることと、歓迎する姿勢]" action="[見学・相談など、次の行動]" speaker="[プロジェクト名 / メッセージの発信者]" image="./project-team.svg" imageAlt="[チームや活動の説明]" />

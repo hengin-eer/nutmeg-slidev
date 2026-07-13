@@ -9,6 +9,6 @@ const variant = computed(() => (($slidev.configs.themeConfig?.nutmeg as { varian
 <template><div class="slidev-layout nutmeg-layout nutmeg-project-layout nutmeg-project-layout--overview" :class="`nutmeg-layout--${variant}`"><slot /></div></template>
 
 <style scoped>
-.nutmeg-project-layout { display: flex; flex-direction: column; justify-content: center; }
-.nutmeg-project-layout--overview { overflow: hidden; }
+.nutmeg-project-layout { display: flex; flex-direction: column; gap: clamp(.9rem, 2vw, 1.45rem); justify-content: flex-start; min-height: 0; }
+.nutmeg-project-layout--overview { overflow: visible; }
 </style>

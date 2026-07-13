@@ -42,76 +42,87 @@ themeConfig:
   :members="members"
 />` },
   { category: 'Project', title: 'NutmegProjectOverview', description: 'プロジェクト名、対象、アプリの一文説明だけを提示する。', keywords: ['project', 'overview', '概要', 'アプリ'], deck: 'slides/', slide: 10, code: String.raw`<NutmegProjectOverview
-  name="Campus Bridge"
-  summary="学園祭の参加団体と実行委員会をつなぐ運営アプリ"
-  :audience="['参加団体', '実行委員会']"
+  name="[プロジェクト名]"
+  summary="[誰の、どの業務を、どう支えるかを一文で記載]"
+  :audience="['[主な利用者]', '[連携する相手]']"
   image="./project-screen.svg"
-  image-alt="プロジェクト画面"
+  image-alt="[画面の説明]"
 />` },
   { category: 'Project', title: 'NutmegProjectMission', description: '対象者、現在の課題、目指す状態からミッションを組み立てる。', keywords: ['project', 'mission', 'ミッション', '課題'], deck: 'slides/', slide: 11, code: String.raw`<NutmegProjectMission
-  statement="準備に必要な情報と次の行動が、迷わず見つかる状態をつくる"
-  target="参加団体と実行委員会"
-  challenge="情報が複数の場所に分散している"
-  future="一つの場所で準備を進められる"
+  statement="[プロジェクトが実現したい状態]"
+  target="[支援する相手]"
+  challenge="[現在起きている課題]"
+  future="[導入後に実現したい状態]"
 />` },
   { category: 'Project', title: 'NutmegProjectSupport', description: 'アプリが利用者のどの業務を支えるかを分解して示す。', keywords: ['project', 'support', '支援', '機能'], deck: 'slides/', slide: 12, code: String.raw`<NutmegProjectSupport :items="[
-  { title: '連絡', detail: '必要な情報を共有する' },
-  { title: '名簿', detail: '提出状況を確認する' },
-  { title: '物品', detail: '受け渡しを管理する' },
-  { title: '会場', detail: '準備状況を集める' }
+  { title: '[支援内容 01]', detail: '[具体的に支える業務]' },
+  { title: '[支援内容 02]', detail: '[具体的に支える業務]' },
+  { title: '[支援内容 03]', detail: '[具体的に支える業務]' },
+  { title: '[支援内容 04]', detail: '[具体的に支える業務]' }
 ]" />` },
   { category: 'Project', title: 'NutmegWorkGrid', description: 'プロジェクト内で実際に行う仕事内容を、行動単位で並べる。', keywords: ['project', 'work', '仕事内容', '役割'], deck: 'slides/', slide: 13, code: String.raw`<NutmegWorkGrid :items="[
-  { title: '要件を整理する', detail: '利用者の業務を画面へ落とし込む' },
-  { title: '画面をつくる', detail: '迷わない情報構造を設計する' },
-  { title: '仕組みを支える', detail: 'データと権限を実装する' }
+  { title: '[仕事内容 01]', detail: '[誰と、何を整理する仕事か]', tags: ['[担当領域]'] },
+  { title: '[仕事内容 02]', detail: '[どんな成果物をつくる仕事か]', tags: ['[担当領域]'] },
+  { title: '[仕事内容 03]', detail: '[どう改善や運用を支える仕事か]', tags: ['[担当領域]'] },
+  { title: '[仕事内容 04]', detail: '[チームでどんな役割を担うか]', tags: ['[担当領域]'] }
 ]" />` },
   { category: 'Project', title: 'NutmegFeatureShowcase', description: 'アプリ画面と説明を並べ、実際の利用場面をアピールする。', keywords: ['project', 'screen', '画面', 'showcase'], deck: 'slides/', slide: 14, code: String.raw`<NutmegFeatureShowcase
-  title="準備状況を一つの画面で確認する"
-  description="見るべき情報と次の行動をまとめる。"
+  title="[画面で実現できること]"
+  description="[利用者がこの画面を使う場面と得られる価値]"
   image="./project-screen.svg"
-  image-alt="アプリ画面"
-  :points="['提出状況', '担当作業', '次の締切']"
+  image-alt="[画面の説明]"
+  :points="['[確認できる情報]', '[実行できる操作]', '[迷わなくなる点]']"
 />` },
   { category: 'Project', title: 'NutmegSchedule', description: '年間、週間などのスパンを切り替えて活動の流れを示す。', keywords: ['project', 'schedule', '年間', '週間', '予定'], deck: 'slides/', slide: 15, code: String.raw`<NutmegSchedule scale="year" :items="[
-  { period: '4–5月', title: '企画と募集' },
-  { period: '6–7月', title: '準備' },
-  { period: '8月', title: '試行' },
-  { period: '9–10月', title: '本番' }
+  { period: '[期間 01]', title: '[フェーズ名]', detail: '[この期間の目的]' },
+  { period: '[期間 02]', title: '[フェーズ名]', detail: '[この期間の目的]' },
+  { period: '[期間 03]', title: '[フェーズ名]', detail: '[この期間の目的]' },
+  { period: '[期間 04]', title: '[フェーズ名]', detail: '[この期間の目的]' },
+  { period: '[期間 05]', title: '[フェーズ名]', detail: '[この期間の目的]' }
 ]" />` },
   { category: 'Project', title: 'NutmegSchedule / week', description: '一週間の動きと、参加後の次の一歩を見える化する。', keywords: ['project', 'schedule', '週間', 'week', '予定'], deck: 'slides/', slide: 16, code: String.raw`<NutmegSchedule scale="week" :items="[
-  { period: '月', title: '状況を確認' },
-  { period: '水', title: '画面を試す' },
-  { period: '金', title: '共有する' },
-  { period: '日', title: '次を決める' }
+  { period: '[曜日]', title: '[予定]', detail: '[関わり方や次の一歩]' },
+  { period: '[曜日]', title: '[予定]', detail: '[関わり方や次の一歩]' },
+  { period: '[曜日]', title: '[予定]', detail: '[関わり方や次の一歩]' },
+  { period: '[曜日]', title: '[予定]', detail: '[関わり方や次の一歩]' },
+  { period: '[曜日]', title: '[予定]', detail: '[関わり方や次の一歩]' },
+  { period: '[曜日]', title: '[予定]', detail: '[関わり方や次の一歩]' },
+  { period: '[曜日]', title: '[予定]', detail: '[関わり方や次の一歩]' }
 ]" />` },
   { category: 'Project', title: 'NutmegComparison', description: '他プロジェクトとの違いを、同じ比較軸で整理する。', keywords: ['project', 'comparison', '比較', '違い'], deck: 'slides/', slide: 17, code: String.raw`<NutmegComparison
-  highlight-id="campus"
+  highlight-id="project"
   :subjects="[
-    { id: 'campus', name: 'Campus Bridge' },
-    { id: 'infra', name: 'Infra Team' }
+    { id: 'project', name: '[このプロジェクト]' },
+    { id: 'target-a', name: '[比較対象 A]' },
+    { id: 'target-b', name: '[比較対象 B]' }
   ]"
   :rows="rows"
 />` },
   { category: 'Project', title: 'NutmegProjectFacts', description: '規模や特徴を短い事実として見せる。', keywords: ['project', 'facts', '数字', '規模'], deck: 'slides/', slide: 18, code: String.raw`<NutmegProjectFacts :items="[
-  { value: '4', label: '支援領域' },
-  { value: '2', label: '主な利用者' }
+  { value: 'XX', label: '[数値の意味]', detail: '[集計条件や期間]' },
+  { value: 'XX', label: '[数値の意味]', detail: '[集計条件や期間]' },
+  { value: 'XX', label: '[数値の意味]', detail: '[集計条件や期間]' },
+  { value: 'XX', label: '[数値の意味]', detail: '[集計条件や期間]' }
 ]" />` },
   { category: 'Project', title: 'NutmegQuote', description: '利用者やメンバーの声で、紹介に実感を加える。', keywords: ['project', 'quote', '声', 'インタビュー'], deck: 'slides/', slide: 19, code: String.raw`<NutmegQuote
-  quote="次に何をすればいいかが分かる。"
-  source="プロジェクトの利用者"
-  role="SAMPLE"
+  :items="[
+    { quote: 'どこを見ればよいかが整理されていて、次にやることを決めやすくなりました。', source: '[利用者 A]', role: '[所属・立場]' },
+    { quote: '確認のために何度も連絡する回数が減り、自分の作業に集中できました。', source: '[利用者 B]', role: '[所属・立場]' },
+    { quote: '必要な情報が同じ場所にまとまっているので、途中から参加しても状況を追えました。', source: '[利用者 C]', role: '[所属・立場]' },
+    { quote: '使って気づいたことを伝えると、次の改善に反映されるのがうれしいです。', source: '[利用者 D]', role: '[所属・立場]' }
+  ]"
 />` },
   { category: 'Project', title: 'NutmegOnboarding', description: '新入生が参加してからの最初の一歩を示す。', keywords: ['project', 'onboarding', '新入生', '参加'], deck: 'slides/', slide: 20, code: String.raw`<NutmegOnboarding :steps="[
-  { timing: '1週目', title: '見てみる', detail: '画面を知る' },
-  { timing: '2週目', title: '聞いてみる', detail: '課題を整理する' },
-  { timing: '1か月後', title: '届けてみる', detail: '結果を振り返る' }
+  { timing: '[タイミング]', title: '[最初の一歩]', detail: '[触れる情報や画面]' },
+  { timing: '[タイミング]', title: '[次の一歩]', detail: '[チームで試すこと]' },
+  { timing: '[タイミング]', title: '[届ける一歩]', detail: '[振り返る結果]' }
 ]" />` },
   { category: 'Project', title: 'NutmegRecruitMessage', description: '新入生へ、参加後に得られる経験まで含めて伝える。', keywords: ['project', 'recruit', '勧誘', '新入生', 'message'], deck: 'slides/', slide: 21, code: String.raw`<NutmegRecruitMessage
-  copy="つくるだけじゃない。使われるところまで、一緒に見る。"
-  message="利用者の声を聞き、考え、画面にする。"
-  action="まずは見に来てください"
+  copy="[新入生へ届けたい一番のコピー]"
+  message="[参加すると経験できることと、歓迎する姿勢]"
+  action="[見学・相談など、次の行動]"
   image="./project-team.svg"
-  image-alt="チームイメージ"
+  image-alt="[チームや活動の説明]"
 />` },
 ]
 
@@ -132,6 +143,7 @@ const previewOpen = document.querySelector('#preview-open')
 const previewCode = document.querySelector('#preview-code-content')
 const previewCopy = document.querySelector('#preview-copy')
 const copyStatus = document.querySelector('#copy-status')
+const packageTabs = [...document.querySelectorAll('[data-package-tab]')]
 let category = 'すべて'
 let activeEntry = null
 
@@ -240,6 +252,22 @@ async function copyText(text, label) {
   }
 }
 
+function activatePackageTab(tab) {
+  const manager = tab.dataset.packageTab
+  packageTabs.forEach((candidate) => {
+    const isActive = candidate === tab
+    candidate.classList.toggle('is-active', isActive)
+    candidate.setAttribute('aria-selected', String(isActive))
+  })
+  document.querySelectorAll('[data-package-panel]').forEach((panel) => {
+    panel.hidden = panel.dataset.packagePanel !== manager
+  })
+}
+
+packageTabs.forEach((tab) => {
+  if (!tab.disabled) tab.addEventListener('click', () => activatePackageTab(tab))
+})
+
 document.querySelectorAll('[data-copy-target]').forEach((button) => {
   button.addEventListener('click', () => {
     const target = document.querySelector(`#${button.dataset.copyTarget}`)
@@ -251,4 +279,5 @@ search.addEventListener('input', renderItems)
 document.querySelector('#preview-close').addEventListener('click', closePreview)
 dialog.addEventListener('click', (event) => { if (event.target === dialog) closePreview() })
 dialog.addEventListener('close', () => { frame.src = 'about:blank' })
+activatePackageTab(packageTabs.find((tab) => tab.classList.contains('is-active')) ?? packageTabs[0])
 render()

@@ -13,10 +13,10 @@ defineProps<{ subjects: Subject[]; rows: Row[]; highlightId?: string }>()
 </template>
 
 <style scoped>
-.nutmeg-comparison { border-top: 1px solid var(--nutmeg-card-border); display: grid; font-size: .82rem; }
-.nutmeg-comparison__head, .nutmeg-comparison__row { display: grid; grid-template-columns: minmax(8rem, 1.2fr) repeat(var(--subject-count), minmax(0, 1fr)); }
-.nutmeg-comparison__head > *, .nutmeg-comparison__row > * { border-bottom: 1px solid var(--nutmeg-card-border); border-right: 1px solid var(--nutmeg-card-border); padding: .75rem .8rem; }
-.nutmeg-comparison__head > *:last-child, .nutmeg-comparison__row > *:last-child { border-right: 0; }
+.nutmeg-comparison { display: grid; font-size: .82rem; overflow: hidden; }
+.nutmeg-comparison__head, .nutmeg-comparison__row { display: grid; grid-template-columns: minmax(7rem, .9fr) repeat(var(--subject-count), minmax(0, 1fr)); }
+.nutmeg-comparison__head > *, .nutmeg-comparison__row > * { border-bottom: 1px solid var(--nutmeg-card-border); padding: .65rem .7rem; }
+.nutmeg-comparison__head > *:first-child, .nutmeg-comparison__row > *:first-child { padding-left: 0; }
 .nutmeg-comparison__head strong { color: var(--nutmeg-ink); font-size: .9rem; }
 .nutmeg-comparison__row > strong { color: var(--nutmeg-body); }
 .is-highlight { background: var(--nutmeg-card-highlight-background); color: var(--nutmeg-ink); font-weight: 700; }

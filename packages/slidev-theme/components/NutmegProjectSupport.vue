@@ -19,10 +19,12 @@ defineProps<{ items: SupportItem[] }>()
 .nutmeg-project-support { display: grid; gap: 1rem; grid-template-columns: repeat(var(--support-columns), minmax(0, 1fr)); }
 .nutmeg-project-support--1 { --support-columns: 1; }
 .nutmeg-project-support--2 { --support-columns: 2; }
-.nutmeg-project-support--3, .nutmeg-project-support--4 { --support-columns: 2; }
-article { background: var(--nutmeg-card-background); border: 1px solid var(--nutmeg-card-border); border-radius: .8rem; min-height: 10.5rem; padding: 1.2rem 1.3rem; }
+.nutmeg-project-support--3 { --support-columns: 3; }
+.nutmeg-project-support--4 { --support-columns: 4; }
+article { border-top: 1px solid var(--nutmeg-card-border); min-height: 0; padding: .85rem .1rem 0; }
 .nutmeg-project-support__index { color: var(--nutmeg-orange); font-size: .72rem; font-weight: 700; letter-spacing: .08em; }
-.nutmeg-project-support__icon { float: right; font-size: 1.4rem; }
-h2 { color: var(--nutmeg-ink); font-size: 1.25rem; margin: 1rem 0 .55rem; }
-p { color: var(--nutmeg-body); font-size: .88rem; line-height: 1.65; margin: 0; }
+.nutmeg-project-support__icon { color: var(--nutmeg-orange-deep); font-size: 1rem; margin-left: .45rem; }
+h2 { color: var(--nutmeg-ink); font-size: 1.1rem; margin: .65rem 0 .45rem; }
+p { color: var(--nutmeg-body); font-size: .82rem; line-height: 1.6; margin: 0; }
+@media (max-width: 45rem) { .nutmeg-project-support--3, .nutmeg-project-support--4 { --support-columns: 2; } }
 </style>
