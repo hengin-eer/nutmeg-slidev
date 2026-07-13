@@ -18,6 +18,7 @@
   --nutmeg-card-action-background: #fff0eb;
   --nutmeg-footer-background: transparent;
   --nutmeg-header-safe-area: 7.5rem;
+  --nutmeg-brand-gradient: radial-gradient(circle at 16% 12%, #ffcb00 0%, #ffcb00 30%, #f0932e 60%, #ff592b 90%);
 }
 
 @font-face {
@@ -60,6 +61,7 @@
 }
 
 .nutmeg-layout { height: 100%; }
+.nutmeg-layout--brand-gradient { background: var(--nutmeg-brand-gradient); }
 
 html[data-nutmeg-variant="contrast"] {
   --nutmeg-ink: var(--nutmeg-black);
@@ -68,7 +70,7 @@ html[data-nutmeg-variant="contrast"] {
 }
 
 html[data-nutmeg-variant="brand-gradient"] {
-  --nutmeg-page-background: radial-gradient(circle at 16% 12%, #ffcb00 0%, #ffcb00 30%, #f0932e 60%, #ff592b 90%);
+  --nutmeg-page-background: var(--nutmeg-brand-gradient);
   --nutmeg-ink: var(--nutmeg-black);
   --nutmeg-body: #352b27;
   --nutmeg-card-background: rgb(255 255 255 / 88%);
@@ -89,6 +91,21 @@ html[data-nutmeg-variant="brand-gradient"] {
 
 .nutmeg-grid--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .nutmeg-grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+.nutmeg-section-label {
+  color: var(--nutmeg-orange-deep);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin: 0;
+}
+
+.nutmeg-empty-state {
+  border: 1px dashed var(--nutmeg-orange-deep);
+  color: var(--nutmeg-orange-deep);
+  font-size: 0.9rem;
+  padding: 1rem 1.2rem;
+}
 .nutmeg-reference-list {
   border-left: 3px solid var(--nutmeg-orange);
   display: grid;

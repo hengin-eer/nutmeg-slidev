@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+  <rect width="1200" height="700" fill="#fff0eb"/>
+  <circle cx="220" cy="230" r="100" fill="#ffcb00"/><circle cx="600" cy="230" r="100" fill="#f0932e"/><circle cx="980" cy="230" r="100" fill="#ff592b"/>
+  <path d="M80 620c14-180 126-250 280-250s266 70 280 250M460 620c14-180 126-250 280-250s266 70 280 250M840 620c14-180 126-250 280-250s266 70 280 250" fill="none" stroke="#24201f" stroke-width="28" stroke-linecap="round"/>
+  <text x="600" y="100" text-anchor="middle" fill="#24201f" font-family="Arial, sans-serif" font-size="34" font-weight="700">CAMPUS BRIDGE / SAMPLE TEAM</text>
+</svg>

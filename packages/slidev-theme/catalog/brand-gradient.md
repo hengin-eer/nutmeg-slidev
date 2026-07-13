@@ -2,6 +2,7 @@
 theme: ../
 title: NUTMEG Slide Design System — Brand Gradient
 aspectRatio: 16/9
+routerMode: hash
 themeConfig:
   nutmeg:
     variant: brand-gradient
