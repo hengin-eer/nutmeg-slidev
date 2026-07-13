@@ -86,7 +86,7 @@ themeConfig:
 
 ---
 
-<NutmegTitle eyebrow="COMPONENT　/　MEMBER GRID" title="大人数はfluidモードで密度を調整する" lead="18人までを目安に、列数と文字サイズを自動調整する。" />
+<NutmegTitle eyebrow="COMPONENT　/　MEMBER GRID" title="人数が変わってもfluidモードで密度を調整する" lead="3列×4行を目安に、列数と文字サイズを自動調整する。" />
 
 <NutmegMemberGrid fit="fluid" :members="[
   { name: '技大情太郎', affiliation: '情経B4', roles: ['PM', 'Front'] },
@@ -103,6 +103,8 @@ themeConfig:
   { name: '山田 蓮', affiliation: '情経B2', roles: ['PM'] }
 ]" />
 
+---
+layout: nutmeg-project-overview
 ---
 
 <NutmegTitle eyebrow="PROJECT　/　OVERVIEW" title="まず、何のプロジェクトかを一目で伝える" lead="ミッションや機能を詰め込まず、名前・対象・一文の説明に絞る。" />
@@ -137,6 +139,8 @@ themeConfig:
   { title: '運用を確かめる', detail: '本番の準備と利用後の改善を続ける。', tags: ['Operation'] }
 ]" />
 
+---
+layout: nutmeg-project-showcase
 ---
 
 <NutmegTitle eyebrow="PROJECT　/　SCREEN" title="アプリ画面を見せながら、支援内容を具体化する" />
@@ -207,6 +211,8 @@ themeConfig:
   { timing: '1か月後', title: '届けてみる', detail: '使われた結果を振り返る' }
 ]" />
 
+---
+layout: nutmeg-project-message
 ---
 
 <NutmegTitle eyebrow="PROJECT　/　RECRUIT" title="新入生へのメッセージは、参加後の景色まで見せる" />

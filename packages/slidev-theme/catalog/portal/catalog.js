@@ -37,7 +37,7 @@ themeConfig:
     roles: ['PM', 'Front']
   }
 ]" />` },
-  { category: 'Component', title: 'NutmegMemberGrid / fluid', description: '人数が多い場合に、列数と文字サイズを調整して表示する。', keywords: ['メンバー', 'member', 'grid', 'fluid', '18人'], deck: 'slides/', slide: 9, code: String.raw`<NutmegMemberGrid
+  { category: 'Component', title: 'NutmegMemberGrid / fluid', description: '人数に合わせて列数と文字サイズを調整し、3列×4行の密度を保つ。', keywords: ['メンバー', 'member', 'grid', 'fluid', '12人'], deck: 'slides/', slide: 9, code: String.raw`<NutmegMemberGrid
   fit="fluid"
   :members="members"
 />` },

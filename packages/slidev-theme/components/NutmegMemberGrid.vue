@@ -15,7 +15,7 @@ const props = withDefaults(defineProps<{
 }>(), { fit: 'strict' })
 
 const failedAvatars = ref(new Set<string>())
-const limit = computed(() => props.fit === 'strict' ? 12 : 18)
+const limit = computed(() => 12)
 const hasTooMany = computed(() => props.members.length > limit.value)
 const hasNone = computed(() => props.members.length === 0)
 const columns = computed(() => {

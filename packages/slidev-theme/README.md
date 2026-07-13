@@ -84,7 +84,7 @@ import members from './members.json'
 <NutmegMemberGrid :members="members" fit="strict" />
 ```
 
-`strict` は1枚12人まで、`fluid` は18人までを目安にします。どちらも最大3列を基準にし、`fluid` は文字とカードの密度を下げて人数の多い場合に対応します。画像がない場合は氏名からイニシャルを表示します。
+`strict` と `fluid` はどちらも1枚12人まで（3列×4行）を目安にします。`fluid` は文字とカードの密度を下げ、人数が変わる場合に対応します。画像がない場合は氏名からイニシャルを表示します。
 
 ### 表紙の発表者
 
