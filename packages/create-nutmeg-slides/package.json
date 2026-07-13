@@ -1,6 +1,6 @@
 {
   "name": "@timdaik/create-nutmeg-slides",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Create a Slidev deck with the NUTMEG theme",
   "license": "MIT",
   "repository": {
