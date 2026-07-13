@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/hengin-eer/nutmeg-slidev/compare/v0.3.1...v0.4.0) (2026-07-13)
+
+
+### 追加
+
+* プロジェクト紹介部品とスライドポータルを拡張 ([#15](https://github.com/hengin-eer/nutmeg-slidev/issues/15)) ([1ab7c9c](https://github.com/hengin-eer/nutmeg-slidev/commit/1ab7c9cfe2eba9b837d6f2dc06127cd4d63a7e6b))
+
 ## [0.3.1](https://github.com/hengin-eer/nutmeg-slidev/compare/v0.3.0...v0.3.1) (2026-07-13)
 
 
