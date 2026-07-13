@@ -8,7 +8,7 @@ themeConfig:
     logo: every-slide
 ---
 
-<NutmegCover category="NUTMEG Slide Design System" title="ロゴ背景版" updated="v0.2.1" /> <!-- x-release-please-version -->
+<NutmegCover category="NUTMEG Slide Design System" title="ロゴ背景版" updated="v0.3.0" /> <!-- x-release-please-version -->
 
 ---
 
