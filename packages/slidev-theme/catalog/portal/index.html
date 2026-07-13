@@ -12,7 +12,7 @@
       <header class="catalog-hero">
         <img class="catalog-logo" src="./brand/logo_mark_horizontal_color.svg" alt="NUTMEG" />
         <p class="eyebrow">NUTMEG SLIDE DESIGN SYSTEM <span>v{{VERSION}}</span></p>
-        <h1>NUTMEGらしいスライドを、<br />すぐに組み立てる。</h1>
+        <h1>NUTMEGらしいスライドを、すぐに組み立てる。</h1>
         <p class="hero-copy">NUTMEGの資料づくりに使えるSlidevテーマと、再利用可能なレイアウト・コンポーネントをまとめたデザインシステムです。</p>
         <div class="hero-actions">
           <a class="button button--primary" href="#slide-portal">スライドポータルを見る</a>
@@ -23,35 +23,36 @@
       <section class="getting-started" aria-labelledby="getting-started-title">
         <p class="section-eyebrow">GETTING STARTED</p>
         <h2 id="getting-started-title">npmではじめる</h2>
-        <p class="section-copy">使い慣れたパッケージマネージャーで資料を作るか、手元のSlidev資料へテーマを追加します。</p>
-        <div class="command-grid">
-          <article class="command-card">
-            <h3>npm</h3>
-            <div class="command-row"><div><p>新しい資料を作る</p><pre><code id="command-npm-create">npm create @timdaik/nutmeg-slides@latest -- my-slides</code></pre></div><button class="copy-button" type="button" data-copy-target="command-npm-create">コピー</button></div>
-            <div class="command-row"><div><p>既存資料へテーマを追加</p><pre><code id="command-npm-install">npm install -D @timdaik/slidev-theme-nutmeg@latest</code></pre></div><button class="copy-button" type="button" data-copy-target="command-npm-install">コピー</button></div>
-          </article>
-          <article class="command-card">
-            <h3>yarn</h3>
-            <div class="command-row"><div><p>新しい資料を作る</p><pre><code id="command-yarn-create">yarn create @timdaik/nutmeg-slides my-slides</code></pre></div><button class="copy-button" type="button" data-copy-target="command-yarn-create">コピー</button></div>
-            <div class="command-row"><div><p>既存資料へテーマを追加</p><pre><code id="command-yarn-install">yarn add --dev @timdaik/slidev-theme-nutmeg@latest</code></pre></div><button class="copy-button" type="button" data-copy-target="command-yarn-install">コピー</button></div>
-          </article>
-          <article class="command-card">
-            <h3>pnpm</h3>
-            <div class="command-row"><div><p>新しい資料を作る</p><pre><code id="command-pnpm-create">pnpm create @timdaik/nutmeg-slides@latest my-slides</code></pre></div><button class="copy-button" type="button" data-copy-target="command-pnpm-create">コピー</button></div>
-            <div class="command-row"><div><p>既存資料へテーマを追加</p><pre><code id="command-pnpm-install">pnpm add --save-dev @timdaik/slidev-theme-nutmeg@latest</code></pre></div><button class="copy-button" type="button" data-copy-target="command-pnpm-install">コピー</button></div>
-          </article>
-          <article class="command-card">
-            <h3>bun</h3>
-            <div class="command-row"><div><p>新しい資料を作る</p><pre><code id="command-bun-create">bun create @timdaik/nutmeg-slides@latest my-slides</code></pre></div><button class="copy-button" type="button" data-copy-target="command-bun-create">コピー</button></div>
-            <div class="command-row"><div><p>既存資料へテーマを追加</p><pre><code id="command-bun-install">bun add --dev @timdaik/slidev-theme-nutmeg@latest</code></pre></div><button class="copy-button" type="button" data-copy-target="command-bun-install">コピー</button></div>
-          </article>
-          <article class="command-card">
-            <h3>deno</h3>
-            <div class="command-row"><div><p>新しい資料を作る</p><pre><code id="command-deno-create">deno run -A npm:@timdaik/create-nutmeg-slides@latest my-slides</code></pre></div><button class="copy-button" type="button" data-copy-target="command-deno-create">コピー</button></div>
-            <div class="command-row"><div><p>既存資料へテーマを追加</p><pre><code id="command-deno-install">deno add --dev npm:@timdaik/slidev-theme-nutmeg@latest</code></pre></div><button class="copy-button" type="button" data-copy-target="command-deno-install">コピー</button></div>
-          </article>
+        <p class="section-copy">npmで資料を作るか、手元のSlidev資料へテーマを追加します。</p>
+        <div class="package-tabs" role="tablist" aria-label="パッケージマネージャー">
+          <button id="package-tab-npm" class="package-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="package-panel-npm" data-package-tab="npm">
+            <span class="package-icon package-icon--npm" aria-hidden="true">npm</span><span class="package-tab__copy"><strong>npm</strong></span>
+          </button>
+          <button class="package-tab" type="button" role="tab" aria-selected="false" data-package-tab="yarn" disabled aria-disabled="true" title="現行の生成CLIはnpm installを使用します">
+            <span class="package-icon package-icon--yarn" aria-hidden="true">Y</span><span class="package-tab__copy"><strong>Yarn</strong><small>未対応</small></span>
+          </button>
+          <button class="package-tab" type="button" role="tab" aria-selected="false" data-package-tab="pnpm" disabled aria-disabled="true" title="現行の生成CLIはnpm installを使用します">
+            <span class="package-icon package-icon--pnpm" aria-hidden="true">pn</span><span class="package-tab__copy"><strong>pnpm</strong><small>未対応</small></span>
+          </button>
+          <button class="package-tab" type="button" role="tab" aria-selected="false" data-package-tab="bun" disabled aria-disabled="true" title="現行の生成CLIはnpm installを使用します">
+            <span class="package-icon package-icon--bun" aria-hidden="true">B</span><span class="package-tab__copy"><strong>Bun</strong><small>未対応</small></span>
+          </button>
+          <button class="package-tab" type="button" role="tab" aria-selected="false" data-package-tab="deno" disabled aria-disabled="true" title="現行の生成CLIはnpm installを使用します">
+            <span class="package-icon package-icon--deno" aria-hidden="true">D</span><span class="package-tab__copy"><strong>Deno</strong><small>未対応</small></span>
+          </button>
         </div>
-        <p class="command-note">Denoでは、生成コマンドにパッケージの実行権限（<code>-A</code>）を渡します。</p>
+        <section id="package-panel-npm" class="package-panel" role="tabpanel" aria-labelledby="package-tab-npm" data-package-panel="npm">
+          <div class="command-grid command-grid--npm">
+            <article class="command-card">
+              <h3>新しい資料を作る</h3>
+              <div class="command-row"><pre><code id="command-npm-create">npm create @timdaik/nutmeg-slides@latest -- my-slides</code></pre><button class="copy-button" type="button" data-copy-target="command-npm-create">コピー</button></div>
+            </article>
+            <article class="command-card">
+              <h3>既存資料へテーマを追加</h3>
+              <div class="command-row"><pre><code id="command-npm-install">npm install -D @timdaik/slidev-theme-nutmeg@latest</code></pre><button class="copy-button" type="button" data-copy-target="command-npm-install">コピー</button></div>
+            </article>
+          </div>
+        </section>
         <p id="copy-status" class="copy-status" aria-live="polite"></p>
       </section>
 

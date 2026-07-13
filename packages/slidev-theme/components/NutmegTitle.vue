@@ -15,8 +15,8 @@ defineProps<{
 </template>
 
 <style scoped>
-.nutmeg-title { margin-bottom: 2.15rem; }
+.nutmeg-title { margin-bottom: clamp(1.2rem, 2.2vw, 1.75rem); max-inline-size: 100%; }
 p { color: var(--nutmeg-gray-600); font-size: 0.76rem; font-weight: 700; letter-spacing: 0.09em; margin: 0 0 0.7rem; }
-h1 { color: var(--nutmeg-ink); font-size: 2.35rem; font-weight: 700; letter-spacing: -0.055em; line-height: 1.25; margin: 0; max-inline-size: 38ch; padding-right: 6.5rem; text-wrap: balance; }
-.nutmeg-title__lead { color: var(--nutmeg-body); font-size: 0.98rem; line-height: 1.7; margin-top: 0.9rem; max-width: 58rem; }
+h1 { color: var(--nutmeg-ink); font-size: clamp(2rem, 3.6vw, 2.65rem); font-weight: 700; letter-spacing: -0.055em; line-height: 1.2; margin: 0; max-inline-size: none; padding-right: 0; text-wrap: pretty; width: calc(100% - var(--nutmeg-header-safe-area)); }
+.nutmeg-title__lead { color: var(--nutmeg-body); font-size: 0.98rem; line-height: 1.65; margin-top: 0.75rem; max-width: calc(100% - var(--nutmeg-header-safe-area)); }
 </style>

@@ -11,7 +11,7 @@ withDefaults(defineProps<{
 </script>
 
 <template>
-  <article class="nutmeg-card" :class="[`nutmeg-card--${tone}`, { 'nutmeg-card--compact': compact }]">
+  <article class="nutmeg-card nutmeg-glass-surface" :class="[`nutmeg-card--${tone}`, { 'nutmeg-card--compact': compact }]">
     <p>{{ label }}</p>
     <h2>{{ title }}</h2>
     <div v-if="$slots.default" class="nutmeg-card__body"><slot /></div>

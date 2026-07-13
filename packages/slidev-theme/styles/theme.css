@@ -16,6 +16,8 @@
   --nutmeg-card-border: var(--nutmeg-gray-200);
   --nutmeg-card-highlight-background: #fff8d6;
   --nutmeg-card-action-background: #fff0eb;
+  --nutmeg-glass-backdrop: none;
+  --nutmeg-glass-shadow: none;
   --nutmeg-footer-background: transparent;
   --nutmeg-header-safe-area: 7.5rem;
   --nutmeg-brand-gradient: radial-gradient(circle at 16% 12%, #ffcb00 0%, #ffcb00 30%, #f0932e 60%, #ff592b 90%);
@@ -73,10 +75,18 @@ html[data-nutmeg-variant="brand-gradient"] {
   --nutmeg-page-background: var(--nutmeg-brand-gradient);
   --nutmeg-ink: var(--nutmeg-black);
   --nutmeg-body: #352b27;
-  --nutmeg-card-background: rgb(255 255 255 / 88%);
-  --nutmeg-card-border: rgb(12 3 3 / 18%);
-  --nutmeg-card-highlight-background: rgb(255 248 214 / 94%);
-  --nutmeg-card-action-background: rgb(255 240 235 / 94%);
+  --nutmeg-card-background: rgb(255 255 255 / 58%);
+  --nutmeg-card-border: rgb(255 255 255 / 55%);
+  --nutmeg-card-highlight-background: rgb(255 255 255 / 68%);
+  --nutmeg-card-action-background: rgb(255 255 255 / 64%);
+  --nutmeg-glass-backdrop: blur(18px) saturate(125%);
+  --nutmeg-glass-shadow: 0 12px 32px rgb(12 3 3 / 10%);
+}
+
+.nutmeg-glass-surface {
+  -webkit-backdrop-filter: var(--nutmeg-glass-backdrop);
+  backdrop-filter: var(--nutmeg-glass-backdrop);
+  box-shadow: var(--nutmeg-glass-shadow);
 }
 
 .slidev-layout h1,
