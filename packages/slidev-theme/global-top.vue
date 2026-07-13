@@ -10,12 +10,12 @@ type NutmegOptions = {
 }
 
 const { $slidev } = useSlideContext()
-const options = computed<NutmegOptions>(() => ($slidev.themeConfigs.value?.nutmeg as NutmegOptions | undefined) ?? {})
+const options = computed<NutmegOptions>(() => ($slidev.configs.themeConfig?.nutmeg as NutmegOptions | undefined) ?? {})
 const variant = computed(() => options.value.variant ?? 'soft')
 const logo = computed(() => options.value.logo ?? 'every-slide')
 const showHeaderLogo = computed(() => (
   (logo.value === 'every-slide' || logo.value === 'footer')
-  && $slidev.nav.currentPage.value > 1
+  && $slidev.nav.currentPage > 1
 ))
 
 watchEffect(() => {

@@ -21,7 +21,7 @@ const props = defineProps<{
 
 const { $slidev } = useSlideContext()
 const failedAvatar = ref(false)
-const options = computed(() => $slidev.themeConfigs.value?.nutmeg as { variant?: string; logo?: string } | undefined)
+const options = computed(() => $slidev.configs.themeConfig?.nutmeg as { variant?: string; logo?: string } | undefined)
 const variant = computed(() => {
   return options.value?.variant === 'brand-gradient' ? 'brand-gradient' : 'soft'
 })

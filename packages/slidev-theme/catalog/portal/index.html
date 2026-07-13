@@ -11,14 +11,55 @@
     <main class="catalog-shell">
       <header class="catalog-hero">
         <img class="catalog-logo" src="./brand/logo_mark_horizontal_color.svg" alt="NUTMEG" />
-        <p class="eyebrow">SLIDE DESIGN SYSTEM <span>v{{VERSION}}</span></p>
-        <h1>部品を探し、<br />実際のスライドで確かめる。</h1>
-        <p class="hero-copy">検索、用途、実物プレビューから、資料に合う一つの部品を選びます。</p>
+        <p class="eyebrow">NUTMEG SLIDE DESIGN SYSTEM <span>v{{VERSION}}</span></p>
+        <h1>NUTMEGらしいスライドを、<br />すぐに組み立てる。</h1>
+        <p class="hero-copy">NUTMEGの資料づくりに使えるSlidevテーマと、再利用可能なレイアウト・コンポーネントをまとめたデザインシステムです。</p>
         <div class="hero-actions">
-          <a class="button button--primary" href="./slides/">スライド全体を見る</a>
-          <a class="button" href="https://www.npmjs.com/package/@timdaik/slidev-theme-nutmeg">npmで使う</a>
+          <a class="button button--primary" href="#slide-portal">スライドポータルを見る</a>
+          <a class="button" href="https://www.npmjs.com/package/@timdaik/slidev-theme-nutmeg">npmパッケージを見る</a>
         </div>
       </header>
+
+      <section class="getting-started" aria-labelledby="getting-started-title">
+        <p class="section-eyebrow">GETTING STARTED</p>
+        <h2 id="getting-started-title">npmではじめる</h2>
+        <p class="section-copy">使い慣れたパッケージマネージャーで資料を作るか、手元のSlidev資料へテーマを追加します。</p>
+        <div class="command-grid">
+          <article class="command-card">
+            <h3>npm</h3>
+            <div class="command-row"><div><p>新しい資料を作る</p><pre><code id="command-npm-create">npm create @timdaik/nutmeg-slides@latest -- my-slides</code></pre></div><button class="copy-button" type="button" data-copy-target="command-npm-create">コピー</button></div>
+            <div class="command-row"><div><p>既存資料へテーマを追加</p><pre><code id="command-npm-install">npm install -D @timdaik/slidev-theme-nutmeg@latest</code></pre></div><button class="copy-button" type="button" data-copy-target="command-npm-install">コピー</button></div>
+          </article>
+          <article class="command-card">
+            <h3>yarn</h3>
+            <div class="command-row"><div><p>新しい資料を作る</p><pre><code id="command-yarn-create">yarn create @timdaik/nutmeg-slides my-slides</code></pre></div><button class="copy-button" type="button" data-copy-target="command-yarn-create">コピー</button></div>
+            <div class="command-row"><div><p>既存資料へテーマを追加</p><pre><code id="command-yarn-install">yarn add --dev @timdaik/slidev-theme-nutmeg@latest</code></pre></div><button class="copy-button" type="button" data-copy-target="command-yarn-install">コピー</button></div>
+          </article>
+          <article class="command-card">
+            <h3>pnpm</h3>
+            <div class="command-row"><div><p>新しい資料を作る</p><pre><code id="command-pnpm-create">pnpm create @timdaik/nutmeg-slides@latest my-slides</code></pre></div><button class="copy-button" type="button" data-copy-target="command-pnpm-create">コピー</button></div>
+            <div class="command-row"><div><p>既存資料へテーマを追加</p><pre><code id="command-pnpm-install">pnpm add --save-dev @timdaik/slidev-theme-nutmeg@latest</code></pre></div><button class="copy-button" type="button" data-copy-target="command-pnpm-install">コピー</button></div>
+          </article>
+          <article class="command-card">
+            <h3>bun</h3>
+            <div class="command-row"><div><p>新しい資料を作る</p><pre><code id="command-bun-create">bun create @timdaik/nutmeg-slides@latest my-slides</code></pre></div><button class="copy-button" type="button" data-copy-target="command-bun-create">コピー</button></div>
+            <div class="command-row"><div><p>既存資料へテーマを追加</p><pre><code id="command-bun-install">bun add --dev @timdaik/slidev-theme-nutmeg@latest</code></pre></div><button class="copy-button" type="button" data-copy-target="command-bun-install">コピー</button></div>
+          </article>
+          <article class="command-card">
+            <h3>deno</h3>
+            <div class="command-row"><div><p>新しい資料を作る</p><pre><code id="command-deno-create">deno run -A npm:@timdaik/create-nutmeg-slides@latest my-slides</code></pre></div><button class="copy-button" type="button" data-copy-target="command-deno-create">コピー</button></div>
+            <div class="command-row"><div><p>既存資料へテーマを追加</p><pre><code id="command-deno-install">deno add --dev npm:@timdaik/slidev-theme-nutmeg@latest</code></pre></div><button class="copy-button" type="button" data-copy-target="command-deno-install">コピー</button></div>
+          </article>
+        </div>
+        <p class="command-note">Denoでは、生成コマンドにパッケージの実行権限（<code>-A</code>）を渡します。</p>
+        <p id="copy-status" class="copy-status" aria-live="polite"></p>
+      </section>
+
+      <section id="slide-portal" class="portal-section" aria-labelledby="portal-title">
+        <p class="section-eyebrow">SLIDE PORTAL</p>
+        <h2 id="portal-title">スライドポータル</h2>
+        <p class="section-copy">用途から部品を探し、実物のスライドと利用コードを並べて確認します。</p>
+      </section>
 
       <section class="catalog-controls" aria-label="カタログを絞り込む">
         <label class="search-field">
@@ -34,7 +75,7 @@
       </section>
     </main>
 
-    <dialog id="preview-dialog" class="preview-dialog" aria-label="スライドプレビュー">
+    <dialog id="preview-dialog" class="preview-dialog" aria-label="スライドプレビューと利用コード">
       <div class="preview-dialog__bar">
         <p id="preview-title"></p>
         <div>
@@ -42,7 +83,13 @@
           <button id="preview-close" class="icon-button" type="button" aria-label="プレビューを閉じる">×</button>
         </div>
       </div>
-      <iframe id="preview-frame" title="Slidev slide preview" loading="lazy"></iframe>
+      <div class="preview-dialog__content">
+        <iframe id="preview-frame" title="Slidev slide preview" loading="lazy"></iframe>
+        <section class="preview-code" aria-labelledby="preview-code-title">
+          <div class="preview-code__heading"><h2 id="preview-code-title">使い方</h2><button id="preview-copy" class="copy-button" type="button">コピー</button></div>
+          <pre><code id="preview-code-content"></code></pre>
+        </section>
+      </div>
     </dialog>
     <script src="./catalog.js"></script>
   </body>
