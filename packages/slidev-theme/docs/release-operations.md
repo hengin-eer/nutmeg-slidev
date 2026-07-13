@@ -38,7 +38,16 @@ npm stage --help
 4. npmjs.comでステージ済みパッケージを2FA承認する。
 5. GitHub Draft ReleaseをPublishすると、Pagesが同じタグのカタログをデプロイする。
 
-Release Pleaseには`RELEASE_PLEASE_TOKEN`を設定し、ActionsによるPR作成と必須CI実行を許可する。`v0.2.1`の復旧時は、ステージ用ワークフローを`workflow_dispatch`で`v0.2.1`へ向けて実行する。
+Release Pleaseには、個人アカウント`hengin-eer`で発行した専用のFine-grained PATをRepository secret `RELEASE_PLEASE_TOKEN`として設定する。対象リポジトリは`nutmeg-slidev`だけとし、次のRepository permissionsを付与する。
+
+- Contents: Read and write
+- Issues: Read and write
+- Pull requests: Read and write
+- Metadata: Read（自動付与）
+
+有効期限は1年とし、期限の1か月前までに新しいPATへ更新する。ワークフローはこのSecretを必須とし、`GITHUB_TOKEN`へフォールバックしない。これにより、Release Pleaseが作成したPRでも必須CIを自動実行できる。リポジトリ設定の「Allow GitHub Actions to create and approve pull requests」は有効化しない。
+
+未公開の`v0.2.1`タグは失敗履歴として残し、移動・削除・再公開しない。Release Pleaseが次に算出する`v0.3.0`を、修正後最初のnpm公開版とする。
 
 ## NUTFES移管
 
