@@ -9,7 +9,7 @@ themeConfig:
     logo: every-slide
 ---
 
-<NutmegCover category="NUTMEG Slide Design System" title="NUTMEGらしいスライドを、すぐに組み立てる" updated="v0.4.0" :presenter="{ name: 'NUTMEG Design Team', url: 'https://github.com/hiro-to/nutmeg-slidev' }" /> <!-- x-release-please-version -->
+<NutmegCover category="NUTMEG Slide Design System" title="NUTMEGらしいスライドを、すぐに組み立てる" updated="v0.5.0" :presenter="{ name: 'NUTMEG Design Team', url: 'https://github.com/hiro-to/nutmeg-slidev' }" /> <!-- x-release-please-version -->
 
 ---
 

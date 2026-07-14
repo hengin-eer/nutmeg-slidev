@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/hengin-eer/nutmeg-slidev/compare/v0.4.0...v0.5.0) (2026-07-14)
+
+
+### 追加
+
+* recover skipped v0.5.0 release ([#18](https://github.com/hengin-eer/nutmeg-slidev/issues/18)) ([7e82844](https://github.com/hengin-eer/nutmeg-slidev/commit/7e82844379f614e4810e607c376cae9ddbf07056))
+
 ## [0.4.0](https://github.com/hengin-eer/nutmeg-slidev/compare/v0.3.1...v0.4.0) (2026-07-13)
 
 
